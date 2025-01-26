@@ -9,53 +9,28 @@ import SwiftUI
 
 struct Home: View {
     
-    @State var ingresarpaciente:Bool = false
-    @State var ingresardoctor:Bool = false
-    
+    var coordinator: DoctorCoordinatorImp
     
     var body: some View {
         VStack{
             HStack{
-                Image("camera")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 60,height: 60)
-                Text("app")
-                    .font(.system(size: 40,weight: .bold))
+                CustomImage(imageName: "camera",padding: .init(top: 0, leading: 120, bottom: 0, trailing: 0))
+                CustomText(content: "app",fontSize: 40,fontWeight: .bold,textAlignment: .center, padding: .init(top: 0, leading: 0, bottom: 0, trailing: 120), multilineTextAlignment: .center)
             }
             VStack{
                 Image("undraw_doctors_hwty")
-                Text("Consult Specialist Dortors")
-                    .padding(.bottom,5)
-                    .font(.system(size: 27, weight: .bold))
-                Text("Securely And Privotely")
-                    .font(.system(size: 25, weight: .bold))
-                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit at velit facilisi massa fringilla cum. Elit feugiat aliquam sed sed arcu eget integer cursus rhoncus. ")
-                    .multilineTextAlignment(.center)
-                    .padding()
-                Button(action: {
-                    ingresarpaciente = true
-                }, label: {
-                    Text("Sign up")
-                        .frame(width: 300,height: 40)
-                        .background(.black)
-                        .cornerRadius(25)
-                        .foregroundColor(.white)
-                        .padding()
-                        
+                CustomText(content: "Consult Specialist Dortors", fontSize: 27, fontWeight: .bold,textAlignment: .center,padding: .init(top: 0, leading: 0, bottom: 5, trailing: 0))
+                CustomText(content: "Securely And Privotely", fontSize: 25, fontWeight: .bold, textAlignment: .center)
+                CustomText(content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit at velit facilisi massa fringilla cum. Elit feugiat aliquam sed sed arcu eget integer cursus rhoncus. ", fontSize: 17, padding: .init(top: 2, leading: 10, bottom: 2, trailing: 6), lineLimit: 4, multilineTextAlignment: .center)
+                CustomButton(title: "Sign In", action: {
+                    coordinator.signIn()
                 })
-                NavigationLink(destination: RegisterPatient(),isActive: $ingresarpaciente, label: {EmptyView()})
-                    .hidden()
                 
                 HStack{
-                    Text("¿Eres doctor?")
-                    Button(action: {
-                        ingresardoctor = true
-                    }, label: {
-                        Text("Sign up")
-                    })
-                    NavigationLink(destination: Registerdoc(),isActive:$ingresardoctor, label: {EmptyView()})
-                        .hidden()
+                    CustomText(content: "¿Eres doctor?",textAlignment: .center,padding: .init(top: 0, leading: 100, bottom: 0, trailing: 0), multilineTextAlignment: .center)
+                    CustomButton(title: "Sign up", action: {
+                        coordinator.signUp()
+                    }, backgroundColor: .white, textColor: .blue, width: 60, height: 40,padding: .init(top: 10, leading: 0, bottom: 10, trailing: 110))
                 }
                 .padding(.bottom,25)
                 
@@ -66,6 +41,6 @@ struct Home: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        Home(coordinator: DoctorCoordinatorImp(navigation: UINavigationController()))
     }
 }
