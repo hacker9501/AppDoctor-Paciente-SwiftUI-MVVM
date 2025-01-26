@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		733271582D46B6A500261855 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733271572D46B6A500261855 /* CustomButton.swift */; };
+		7332715A2D46B92900261855 /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733271592D46B92900261855 /* CustomText.swift */; };
+		7332715C2D46C2D300261855 /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7332715B2D46C2D300261855 /* CustomImage.swift */; };
+		7338100A2D46A8550059CE88 /* CoordinatorWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733810092D46A8550059CE88 /* CoordinatorWrapperView.swift */; };
+		7338100C2D46A88E0059CE88 /* DoctorCoordinatorImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7338100B2D46A88E0059CE88 /* DoctorCoordinatorImp.swift */; };
 		7380002F2A4441D1009D7B14 /* UserPacientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7380002E2A4441D1009D7B14 /* UserPacientes.swift */; };
 		738000312A44420E009D7B14 /* UserDoctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738000302A44420E009D7B14 /* UserDoctor.swift */; };
 		738000332A4464C9009D7B14 /* CancelCitas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738000322A4464C9009D7B14 /* CancelCitas.swift */; };
@@ -18,7 +23,6 @@
 		7380003F2A4473A3009D7B14 /* DocVerDetailsPatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7380003E2A4473A3009D7B14 /* DocVerDetailsPatient.swift */; };
 		738000412A456871009D7B14 /* TabsViewsPatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738000402A456871009D7B14 /* TabsViewsPatient.swift */; };
 		73A6545C2A429F150000CDD9 /* DoctorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A6545B2A429F150000CDD9 /* DoctorApp.swift */; };
-		73A6545E2A429F150000CDD9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A6545D2A429F150000CDD9 /* ContentView.swift */; };
 		73A654602A429F170000CDD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73A6545F2A429F170000CDD9 /* Assets.xcassets */; };
 		73A654632A429F170000CDD9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73A654622A429F170000CDD9 /* Preview Assets.xcassets */; };
 		73A6546B2A42A0BF0000CDD9 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A6546A2A42A0BF0000CDD9 /* Home.swift */; };
@@ -35,6 +39,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		733271572D46B6A500261855 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		733271592D46B92900261855 /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
+		7332715B2D46C2D300261855 /* CustomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
+		733810092D46A8550059CE88 /* CoordinatorWrapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorWrapperView.swift; sourceTree = "<group>"; };
+		7338100B2D46A88E0059CE88 /* DoctorCoordinatorImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorCoordinatorImp.swift; sourceTree = "<group>"; };
 		7380002E2A4441D1009D7B14 /* UserPacientes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPacientes.swift; sourceTree = "<group>"; };
 		738000302A44420E009D7B14 /* UserDoctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDoctor.swift; sourceTree = "<group>"; };
 		738000322A4464C9009D7B14 /* CancelCitas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelCitas.swift; sourceTree = "<group>"; };
@@ -47,7 +56,6 @@
 		738000402A456871009D7B14 /* TabsViewsPatient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsViewsPatient.swift; sourceTree = "<group>"; };
 		73A654582A429F150000CDD9 /* Doctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73A6545B2A429F150000CDD9 /* DoctorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorApp.swift; sourceTree = "<group>"; };
-		73A6545D2A429F150000CDD9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		73A6545F2A429F170000CDD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73A654622A429F170000CDD9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		73A6546A2A42A0BF0000CDD9 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -74,20 +82,134 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		733810042D46A6480059CE88 /* CompositionRoot */ = {
+			isa = PBXGroup;
+			children = (
+				73A6545B2A429F150000CDD9 /* DoctorApp.swift */,
+				733810092D46A8550059CE88 /* CoordinatorWrapperView.swift */,
+			);
+			path = CompositionRoot;
+			sourceTree = "<group>";
+		};
+		733810052D46A6610059CE88 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				7338100B2D46A88E0059CE88 /* DoctorCoordinatorImp.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		733810062D46A6730059CE88 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				733810102D46A8C90059CE88 /* Repositories */,
+				7338100F2D46A8BB0059CE88 /* Mappers */,
+				7338100E2D46A8B20059CE88 /* Dtos */,
+				7338100D2D46A8A50059CE88 /* DataSources */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		733810072D46A6790059CE88 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				733810152D46A90B0059CE88 /* UseCases */,
+				733810142D46A9010059CE88 /* Mappers */,
+				733810132D46A8EE0059CE88 /* Interfaces */,
+				733810122D46A8E50059CE88 /* Error */,
+				733810112D46A8D90059CE88 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		733810082D46A6800059CE88 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				73A654692A42A0A70000CDD9 /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7338100D2D46A8A50059CE88 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		7338100E2D46A8B20059CE88 /* Dtos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dtos;
+			sourceTree = "<group>";
+		};
+		7338100F2D46A8BB0059CE88 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		733810102D46A8C90059CE88 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		733810112D46A8D90059CE88 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				738000302A44420E009D7B14 /* UserDoctor.swift */,
+				7380002E2A4441D1009D7B14 /* UserPacientes.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		733810122D46A8E50059CE88 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		733810132D46A8EE0059CE88 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		733810142D46A9010059CE88 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		733810152D46A90B0059CE88 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		733810162D46A9430059CE88 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				733271572D46B6A500261855 /* CustomButton.swift */,
+				733271592D46B92900261855 /* CustomText.swift */,
+				7332715B2D46C2D300261855 /* CustomImage.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		7380002C2A444141009D7B14 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		7380002D2A4441A2009D7B14 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				7380002E2A4441D1009D7B14 /* UserPacientes.swift */,
-				738000302A44420E009D7B14 /* UserDoctor.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		73A6544F2A429F140000CDD9 = {
@@ -109,11 +231,11 @@
 		73A6545A2A429F150000CDD9 /* Doctor */ = {
 			isa = PBXGroup;
 			children = (
-				7380002D2A4441A2009D7B14 /* Model */,
-				7380002C2A444141009D7B14 /* ViewModel */,
-				73A654692A42A0A70000CDD9 /* Views */,
-				73A6545B2A429F150000CDD9 /* DoctorApp.swift */,
-				73A6545D2A429F150000CDD9 /* ContentView.swift */,
+				733810082D46A6800059CE88 /* Presentation */,
+				733810072D46A6790059CE88 /* Domain */,
+				733810062D46A6730059CE88 /* Data */,
+				733810052D46A6610059CE88 /* Coordinators */,
+				733810042D46A6480059CE88 /* CompositionRoot */,
 				73A6545F2A429F170000CDD9 /* Assets.xcassets */,
 				73A654612A429F170000CDD9 /* Preview Content */,
 			);
@@ -131,6 +253,7 @@
 		73A654692A42A0A70000CDD9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				733810162D46A9430059CE88 /* Components */,
 				73A6546A2A42A0BF0000CDD9 /* Home.swift */,
 				73A6546C2A42A0ED0000CDD9 /* Logindoc.swift */,
 				73A6546E2A42A1000000CDD9 /* Registerdoc.swift */,
@@ -150,6 +273,7 @@
 				7380003C2A447377009D7B14 /* ChatsDocPatient.swift */,
 				7380003E2A4473A3009D7B14 /* DocVerDetailsPatient.swift */,
 				738000402A456871009D7B14 /* TabsViewsPatient.swift */,
+				7380002C2A444141009D7B14 /* ViewModel */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,9 +348,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7338100C2D46A88E0059CE88 /* DoctorCoordinatorImp.swift in Sources */,
 				7380003B2A4472FF009D7B14 /* ChatsConPatient.swift in Sources */,
+				733271582D46B6A500261855 /* CustomButton.swift in Sources */,
 				73A6547F2A42A1CC0000CDD9 /* SearchDoc.swift in Sources */,
 				73A6546F2A42A1000000CDD9 /* Registerdoc.swift in Sources */,
+				7332715A2D46B92900261855 /* CustomText.swift in Sources */,
 				738000412A456871009D7B14 /* TabsViewsPatient.swift in Sources */,
 				73A6547D2A42A1A90000CDD9 /* ProfileDoc.swift in Sources */,
 				738000352A447241009D7B14 /* HomeVerPaciente.swift in Sources */,
@@ -235,9 +362,10 @@
 				73A654712A42A1170000CDD9 /* LoginPatient.swift in Sources */,
 				73A6547B2A42A19F0000CDD9 /* ChatsDoc.swift in Sources */,
 				738000332A4464C9009D7B14 /* CancelCitas.swift in Sources */,
+				7332715C2D46C2D300261855 /* CustomImage.swift in Sources */,
+				7338100A2D46A8550059CE88 /* CoordinatorWrapperView.swift in Sources */,
 				73A6546D2A42A0ED0000CDD9 /* Logindoc.swift in Sources */,
 				738000312A44420E009D7B14 /* UserDoctor.swift in Sources */,
-				73A6545E2A429F150000CDD9 /* ContentView.swift in Sources */,
 				7380003D2A447377009D7B14 /* ChatsDocPatient.swift in Sources */,
 				73A6546B2A42A0BF0000CDD9 /* Home.swift in Sources */,
 				738000372A44726D009D7B14 /* DocVerPatient.swift in Sources */,
