@@ -9,21 +9,39 @@ import UIKit
 import SwiftUI
 
 protocol DoctorCoordinator {
-    var navigation: UINavigationController { get }
+    var navigation: UINavigationController { get set }
     func start()
 }
 
-class DoctorCoordinatorImp: DoctorCoordinator {
+class DoctorCoordinatorImp: NSObject, DoctorCoordinator {
     var navigation: UINavigationController
     
     init(navigation: UINavigationController) {
         self.navigation = navigation
+        super.init()
     }
     
     func start() {
-        let doctorView = DoctorViewBuilder.create()
+        let doctorView = Home(coordinator: self)
         let hostingController = UIHostingController(rootView: doctorView)
         navigation.pushViewController(hostingController, animated: true)
     }
     
+    func signIn() {
+        let signInView = Logindoc()
+        let hostingController = UIHostingController(rootView: signInView)
+        navigation.pushViewController(hostingController, animated: true)
+    }
+    
+    func signUp() {
+        let signUpView = Registerdoc()
+        let hostingController = UIHostingController(rootView: signUpView)
+        navigation.pushViewController(hostingController, animated: true)
+    }
+
+    func tabsPatients() {
+        let tabsPatientsView = TabsViewsPatient()
+        let hostingController = UIHostingController(rootView: tabsPatientsView)
+        navigation.pushViewController(hostingController, animated: true)
+    }
 }
