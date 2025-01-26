@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 protocol DoctorCoordinator {
     var navigation: UINavigationController { get }
@@ -20,7 +21,9 @@ class DoctorCoordinatorImp: DoctorCoordinator {
     }
     
     func start() {
-        DoctorViewBuilder.create()
+        let doctorView = DoctorViewBuilder.create()
+        let hostingController = UIHostingController(rootView: doctorView)
+        navigation.pushViewController(hostingController, animated: true)
     }
     
 }
