@@ -1,3 +1,4 @@
 # Ignorar archivos de configuración de usuario de Xcode
 *.xcuserdata/
 Doctor.xcodeproj/xcuserdata/
+/Users/elvermaytahernandez/Desktop/Projects/AppDoctor-Paciente-SwiftUI-MVVM/Doctor.xcodeproj/project.xcworkspace/xcuserdata/elvermaytahernandez.xcuserdatad/UserInterfaceState.xcuserstate
