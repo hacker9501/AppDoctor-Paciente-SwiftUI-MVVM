@@ -1,8 +1,12 @@
 //
-//  DosctorViewBuilder.swift
+//  DoctorViewBuilder.swift
 //  Doctor
 //
 //  Created by Elver Mayta Hernández on 26/01/25.
 //
 
-import Foundation
+struct DoctorViewBuilder {
+    static func create() -> ContentView {
+        return ContentView()
+    }
+}
